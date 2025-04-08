@@ -1,0 +1,20 @@
+Project
+----------------
+
+Site web 
+
+Club de foot.
+
+
+DataBase pour des logins, rentrer des joueurs en ligne, infos club, 
+
+
+Html/Css/Js
+
+
+Devante - Base de données
+Samantha -  PHP, JS
+Mattis - Html/CSS/JS 
+
+
+
