@@ -1,0 +1,99 @@
+body{
+    background-color: #BFBEAE;
+}
+
+.Navbar{
+ background-color: #A61103;
+}
+.Title h1{
+    font-size: 80px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+}
+.Title h2, h3{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 120px;
+    height: auto;
+}
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #A61103;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .Navbar h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+.languages span {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 0.3rem;
+    transition: transform 0.2s;
+}
+.languages a{
+    text-decoration: none;
+}
+.languages span:hover {
+    transform: scale(1.2);
+}
+  
+  .Button {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .Button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #A61103;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .Button button:hover {
+    background-color: #A61103;
+    color: white;
+    border: 2px solid white;
+  }
+.Button{
+    align-items: end;
+}
+.pictureTeam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pictureTeam img {
+    height: 330px;
+    width: auto;
+}
+
+.pictureTeam p {
+    font-size: 50px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    background-color: red;
+    color: white;
+    justify-content: center;
+
+}
