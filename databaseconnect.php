@@ -3,9 +3,9 @@
 // infos sur la base de données
 const MYSQL_HOST = 'localhost';
 const MYSQL_PORT = 3306;
-const MYSQL_NAME = '?';
+const MYSQL_NAME = 'Projet_Club_Web';
 const MYSQL_USER = 'root';
-const MYSQL_PASSWORD = '';
+const MYSQL_PASSWORD = 'Super';
 
 // se connecter a la bd a l'aide des infos obtenues avant
 
