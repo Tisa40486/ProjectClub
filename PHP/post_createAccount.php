@@ -26,7 +26,7 @@ if(strlen($postData["user_password"]) > 20){
     return;
 }
 
-$userExist = $mysqlClient->prepare('SELECT  COUNT(user_name) as user_count FROM Users WHERE user_name = :name');
+$userExist = $mysqlClient->prepare('SELECT  COUNT(user_name) as user_count FROM Utilisateurs WHERE user_name = :name');
 $userExist->execute([
     'name' => $postData["user_name"]]);
 $queryResult = $userExist->fetch();
