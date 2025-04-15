@@ -46,7 +46,7 @@ if($is_valid_password == true) {
         "name" => $queryResult['user_name'],
         "user_id" => $queryResult['user_id'],
     ];
-    header("Location: message-login.php");  // on en met un ou pas
+    header("Location: message-login.html");  // on en met un ou pas
     exit();
 }
 else{
