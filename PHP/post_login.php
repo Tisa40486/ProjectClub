@@ -27,7 +27,7 @@ if(strlen($postData["user_password"]) > 20){
 
 
 
-$query = $mysqlClient->prepare('SELECT user_name,user_password,user_id FROM Users WHERE user_name = :name');
+$query = $mysqlClient->prepare('SELECT user_name,user_password,idUser FROM Utilisateurs WHERE user_name = :name');
 $query->execute([
     'name' => $postData["user_name"]]);
 $queryResult = $query->fetch();
