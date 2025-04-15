@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="icon" href="../Img/Football_Suisse_federation.svg.png">
+</head>
+<body>
+    <header>
+        <header>
+            <img src="../Img/Football_Suisse_federation.svg.png" alt="">
+            <div class="Navbar">
+    
+                <h1>    
+                    <p>
+                        Connexion
+                    </p>
+                </h1>
+            </div>
+        </header>
+        <form action="post_login.php" method="POST" class="formulaire-connexion">
+            <div class="mb-3">
+                <label for="email" class="form-label taille-texte">Nom d'utilisateur :</label>
+                <input class="form-control" id="user_name" name="user_name" aria-describedby="email-help"
+                       placeholder="cr7goat">
+        
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label taille-texte">Mot de passe :</label>
+                <input type="password" class="form-control" id="password" name="user_password">
+            </div>
+            <div class="bouton-envoyer-container">
+                <button type="submit" class="bouton-send">Connexion</button>
+            </div>
+        </form>
+    </header>
+    <main>
+        <a href="./index.fr.html">Back</a>
+    </main>
+    <footer></footer>
+</body>
+</html>
