@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create An Account</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="icon" href="../Img/Football_Suisse_federation.svg.png">
+</head>
+<body>
+    <header>
+        <header>
+            <img src="../Img/Football_Suisse_federation.svg.png" alt="">
+            <div class="Navbar">
+    
+                <h1>    
+                    <p>
+                        Créé un compte 
+                    </p>
+                </h1>
+            </div>
+        </header>
+        <form action="post_createAccount.php" method="POST" class="formulaire-compte">
+            <div class="mb-3">
+                <label for="email" class="form-label text-size">Nom d'utilisateur :</label>
+                <input  class="form-control"  id="user_name" name="user_name" aria-describedby="email-help" placeholder="messilegoat">
+                <div id="email-help" class="form-text text-size">Créé un nom qui ressort ton côté footballeur!</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label text-size">Mot de passe :</label>
+                <input type="password" class="form-control" id="password" name="user_password">
+            </div>
+                <div class="send-button-container">
+            <button type="submit" class="bouton-envoyer">Envoyer</button>
+                </div>
+            </form>
+    </header>
+    <main>
+        <a href="./index.fr.html">Back</a>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
