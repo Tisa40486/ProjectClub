@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . "Code/Html/createAccount.html");
+require_once(__DIR__ . "../Code/Html/createAccount.html");
 require_once(__DIR__ . "/databaseconnect.php");
 
 $postData = $_POST;
@@ -49,7 +49,7 @@ $insertUser ->execute([
 
 
 
-header("Location: message-bienvenue.html");  // met ou pas
+header("../Code/Html/message-bienvenue.html");  // met ou pas
 exit();
 
 ?>
