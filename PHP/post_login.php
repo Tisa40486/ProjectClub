@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . "Code/Html/login.php");
+require_once(__DIR__ . "../Code/Html/login.html");
 require_once(__DIR__ . "/databaseconnect.php");
 
 $postData = $_POST;  // $_POST c'est toujours un tableau
@@ -46,7 +46,7 @@ if($is_valid_password == true) {
         "name" => $queryResult['user_name'],
         "user_id" => $queryResult['user_id'],
     ];
-    header("Location: message-login.html");  // on en met un ou pas
+    header("Location: ../Code/Html/message-login.php");  // on en met un ou pas
     exit();
 }
 else{
