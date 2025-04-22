@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . "../Code/Html/createAccount.html");
+require_once(__DIR__ . "/../Code/Html/createAccount.html");  // prend le dossier dans lequel tu te situes (le DIR)
 require_once(__DIR__ . "/databaseconnect.php");
 
 $postData = $_POST;

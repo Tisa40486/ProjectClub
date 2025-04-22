@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . "../Code/Html/login.html");
+require_once(__DIR__ . "/../Code/Html/login.html");
 require_once(__DIR__ . "/databaseconnect.php");
 
 $postData = $_POST;  // $_POST c'est toujours un tableau
