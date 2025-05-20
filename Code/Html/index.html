@@ -1,63 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Nati</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Style/style.css">
-    <link rel="icon" href="../Img/Football_Suisse_federation.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Nati – Équipe de Suisse de Football</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/Code/Style/style.css" />
+  <link rel="icon" href="../Img/Football_Suisse_federation.png" />
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <img class="logo" src="/Code/Img/Football_Suisse_federation.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="/Code/Img/Football_Suisse_federation.png" alt="Logo" height="40" class="me-2" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Accueil </a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Languages
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Actualités</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Langues
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../Html/index.it.html">🇮🇹 Italy</a></li>
-                <li><a class="dropdown-item" href="../Html/index.de.html">🇩🇪 German</a></li>
+              <li><a class="dropdown-item" href="../Html/index.it.html">🇮🇹 Italien</a></li>
+              <li><a class="dropdown-item" href="../Html/index.de.html">🇩🇪 Allemand</a></li>
             </ul>
-            </li>
+          </li>
         </ul>
-        <div class="ButtonNav">
-            <button> <a href="createAccount.html">Creer un compte</a></button>
-            <button> <a href="login.html">Connexion</a></button>
+
+        <div class="d-flex gap-2">
+          <a href="createAccount.html" class="btn btn-outline-primary">Créer un compte</a>
+          <a href="login.html" class="btn btn-primary">Connexion</a>
         </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="container mt-5 pt-5">
+    <header class="Title">
+      <h1 class="display-5">🇫🇷 Équipe de Suisse de Football</h1>
+    </header>
+
+    <section class="mb-5">
+      <h2>PlayScore</h2>
+      <div class="Score">
+        <p>🇨🇭 Suisse - Luxembourg 🇱🇺 : <strong>3 - 1</strong></p>
+        <p>🇨🇭 Suisse - Irlande Du N. 🇮🇪 : <strong>1 - 1</strong></p>
+      </div>
+    </section>
+    
+  
+    <div class="Actualités">
+        <h2>Actualités</h2>
+        <p>Retrouvez toutes les dernières nouvelles de l'équipe de Suisse de football.</p>
+        <div class="card-group">
+            <div class="card" style="width: 18rem;">
+                <img src="/Code/Img/actu1.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                    <h5 class="card-title">Football: une mi-temps de feu et la Suisse retrouve la victoire</h5>
+                    <p class="card-text">La Suisse a mis fin à sa série de huit matches sans victoire mardi à Saint-Gall. Les hommes de Murat Yakin ont battu le Luxembourg 3-1 grâce à trois buts inscrits en première période.</p>
+                    <a href="https://www.arcinfo.ch/sport/football/football-une-mi-temps-de-feu-et-la-suisse-retrouve-la-victoire-1446076" class="btn btn-primary">Voir plus</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/Code/Img/actu2.jpg" class="card-img-top" alt="" />
+                <div class="card-body">
+                    <h5 class="card-title">Football: la Suisse débute l’année par un nul en Irlande du Nord </h5>
+                    <p class="card-text">La Suisse a partagé l’enjeu (1-1) à Belfast face à l’Irlande du Nord pour sa première rencontre de l’année. Vincent Sierro a égalisé de la tête avant la pause dans ce match amical que la Suisse a largement dominé.</p>
+                    <a href="https://www.arcinfo.ch/sport/football/football-la-suisse-debute-lannee-par-un-nul-en-irlande-du-nord-1445561" class="btn btn-primary">Voir plus</a>
+                </div>
+            </div>
         </div>
     </div>
-    </nav>
 
 
-   <main>
-    <div class="Title">
-        <h1>
-            🇫🇷 Equipe de Suisse de football
-        </h1>
-    </div>
 
-   </main> 
-   <footer>
-    <p>&copy; Groupe 3 Tous droits réservés.</p>
-   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   <script>
-     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-     const popoverList = [...popoverTriggerList].map(el => new bootstrap.Popover(el));
-   </script>
+  </main>
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p class="mb-0">&copy; Groupe 3 – Tous droits réservés.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    [...popoverTriggerList].forEach(el => new bootstrap.Popover(el));
+  </script>
 </body>
 </html>
