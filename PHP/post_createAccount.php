@@ -49,7 +49,7 @@ $insertUser ->execute([
 
 
 
-header("../Code/Html/message-bienvenue.html");  // met ou pas
+header("Location:../Code\Html\message-bienvenue.html");  // met ou pas
 exit();
 
 ?>
