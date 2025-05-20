@@ -1,45 +1,17 @@
-body{
-    background-color: #BFBEAE;
-}
-
-.Navbar{
- background-color: #A61103;
-}
-.Title h1{
-    font-size: 80px;
-    text-decoration: underline;
-    display: flex;
-    justify-content: center;
-}
-.Title h2, h3{
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-}
-header img{
-    width: 120px;
+.logo{
+    width: 100px;
     height: auto;
 }
-.Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #A61103;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+.ButtonNav button, a{
     border-radius: 5px;
-}
-  
-.Navbar h1 {
-font-size: 36px;
-margin: 0;
-}
-
-.Button a{
     text-decoration: none;
+    color: black;
+    background-color: #FFFF;
+    border-color: #FFFF;
 }
 
+<<<<<<< Updated upstream
 .languages span {
     font-size: 1.5rem;
     cursor: pointer;
@@ -178,4 +150,11 @@ main{
 .card-img-top{
     width: auto;
     height: 120px;
+=======
+.Title h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    color: #333;
+>>>>>>> Stashed changes
 }

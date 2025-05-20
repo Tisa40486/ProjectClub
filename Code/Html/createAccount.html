@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Créer un compte</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../Style/style.css"/>
+  <link rel="icon" href="/Code/Img/Football_Suisse_federation.png"/>
+</head>
+<body data-bs-theme="light">
+
+
+  <header class="bg-light border-bottom mb-4">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+      <div class="d-flex align-items-center gap-3">
+        <img src="/Code/Img/Football_Suisse_federation.png" alt="Logo" width="60" height="60">
+        <h1 class="h4 m-0">Créer un compte</h1>
+      </div>
+      <a href="./index.html" class="btn btn-outline-primary">🏠 Retour à l'accueil</a>
+    </div>
+    
+  </header>
+
+
+  <main class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <h2 class="mb-4 text-center">Créer un compte</h2>
+
+            <form class="needs-validation" action="/PHP/post_createAccount.php" method="POST" novalidate>
+              <div class="mb-3">
+                <label for="user_name" class="form-label">Nom d'utilisateur</label>
+                <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Ronaldo" required>
+                <div class="form-text">Choisis un pseudo qui reflète ton côté footballeur !</div>
+                <div class="invalid-feedback">Veuillez entrer un nom d'utilisateur.</div>
+              </div>
+
+        
+              <div class="mb-3">
+                <label for="password" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" id="password" name="user_password" required>
+                <div class="invalid-feedback">Veuillez entrer un mot de passe.</div>
+              </div>
+
+              <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" value="" id="termsCheck" required>
+                <label class="form-check-label" for="termsCheck">
+                  J'accepte les <a href="#">conditions d'utilisation</a>.
+                </label>
+                <div class="invalid-feedback">
+                  Vous devez accepter les conditions avant de continuer.
+                </div>
+              </div>
+
+              <!-- Bouton -->
+              <div class="d-grid">
+                <button class="btn btn-primary" type="submit">Créer le compte</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-muted py-4 mt-5 border-top">
+    &copy; 2025 - Fédération Suisse de Football
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Validation JS -->
+  <script>
+    (() => {
+      'use strict';
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+</body>
+</html>
