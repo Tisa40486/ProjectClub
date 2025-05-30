@@ -41,6 +41,7 @@ $user_name = strip_tags($postData["user_name"]);
 $user_password = password_hash(strip_tags($postData["user_password"]), PASSWORD_DEFAULT);
 
 // Requete qui insert le user-name et le mdp
+var_dump($user_password);
 $insertUser = $mysqlClient -> prepare("INSERT INTO Utilisateurs (user_name, user_password) VALUES (:user_name, :user_password)");
 $insertUser ->execute([
     "user_name" => $user_name,

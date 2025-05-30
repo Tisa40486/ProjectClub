@@ -109,7 +109,7 @@ CREATE TABLE `Sélectionneur` (
 CREATE TABLE `Utilisateurs` (
   `idUser` int(11) NOT NULL,
   `user_name` varchar(15) NOT NULL,
-  `user_password` varchar(20) NOT NULL
+  `user_password` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
