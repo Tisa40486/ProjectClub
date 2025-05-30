@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ahh te revoilà<?php echo $_SESSION["LOGGED_USER"]["name"] ! ?></h1> <!--ATTENTION IL MANQUE DES TRUCS EN HAUT-->
+    <h1>Ahh te revoilà !</h1> <!--ATTENTION IL MANQUE DES TRUCS EN HAUT-->
 </body>
 </html>
