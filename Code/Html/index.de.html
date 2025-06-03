@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Nati – Schweizer Fussballnationalmannschaft</title>
+  <title>La Nati – Schweizer Fußballnationalmannschaft</title>
+  <link rel="icon" href="/Code/Img/Football_Suisse_federation.png" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/Code/Style/style.css" />
-  <link rel="icon" href="../Img/Football_Suisse_federation.png" />
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="/Code/Img/Football_Suisse_federation.png" alt="Logo" height="40" class="me-2" />
+        <img src="/Code/Img/Football_Suisse_federation.png" alt="Logo Schweizer Fussballverband" height="40" class="me-2" />
+        <span class="fw-bold">La Nati</span>
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -26,72 +28,77 @@
             <a class="nav-link active" aria-current="page" href="index.html">Startseite</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nachrichten</a>
+            <a class="nav-link" href="https://www.arcinfo.ch/sport/football/nati/">Neuigkeiten</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
               Sprachen
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../Html/index.html">🇫🇷 Französisch</a></li>
-              <li><a class="dropdown-item" href="../Html/index.de.html">🇩🇪 Deutsch</a></li>
+              <li><a class="dropdown-item" href="/Code/Html/index.it.html">🇮🇹 Italienisch</a></li>
+              <li><a class="dropdown-item" href="/Code/Html/index.html">🇫🇷 Französisch</a></li>
             </ul>
           </li>
         </ul>
 
         <div class="d-flex gap-2">
-          <a href="createAccount.html" class="btn btn-outline-primary">Konto erstellen</a>
-          <a href="login.html" class="btn btn-primary">Anmelden</a>
+          <a href="/Code/Html/createAccount.html" class="btn btn-outline-primary">Konto erstellen</a>
+          <a href="/Code/Html/login.html" class="btn btn-primary">Anmeldung</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <main class="container mt-5 pt-5">
-    <header class="Title">
-      <h1 class="display-5">🇩🇪 Schweizer Fussballnationalmannschaft</h1>
+  <!-- HAUPTINHALT -->
+  <main class="container mt-5">
+    <header class="mb-5 text-center">
+      <h1 class="display-4">🇨🇭 Schweizer Fußballnationalmannschaft</h1>
+      <p class="lead">Willkommen auf der Seite von La Nati.</p>
     </header>
 
+    <!-- Aktuelle Spiele -->
     <section class="mb-5">
-      <h2>Spielstand</h2>
-      <div class="Score">
-        <p>🇨🇭 Schweiz - Luxemburg 🇱🇺 : <strong>3 - 1</strong></p>
-        <p>🇨🇭 Schweiz - Nordirland 🇮🇪 : <strong>1 - 1</strong></p>
-      </div>
+      <h2 class="h4">Aktuelle Ergebnisse</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">🇨🇭 Schweiz - Luxemburg 🇱🇺 : <strong>3 - 1</strong></li>
+        <li class="list-group-item">🇨🇭 Schweiz - Nordirland 🇮🇪 : <strong>1 - 1</strong></li>
+      </ul>
     </section>
 
-    <div class="Actualités">
-      <h2>Nachrichten</h2>
-      <p>Hier finden Sie alle aktuellen Neuigkeiten über die Schweizer Fussballnationalmannschaft.</p>
-      <div class="card-group">
-        <div class="card" style="width: 18rem;">
-          <img src="/Code/Img/actu1.jpg" class="card-img-top" alt="" />
-          <div class="card-body">
-            <h5 class="card-title">Fussball: Feuerwerk in der ersten Halbzeit – Schweiz siegt wieder</h5>
-            <p class="card-text">Die Schweiz beendete am Dienstag in St. Gallen ihre Serie von acht sieglosen Spielen. Das Team von Murat Yakin besiegte Luxemburg mit 3:1 dank drei Toren in der ersten Halbzeit.</p>
-            <a href="https://www.arcinfo.ch/sport/football/football-une-mi-temps-de-feu-et-la-suisse-retrouve-la-victoire-1446076" class="btn btn-primary">Mehr erfahren</a>
+    <!-- Neuigkeiten -->
+    <section class="mb-5">
+      <h2 class="h4 mb-3">Neuigkeiten</h2>
+      <p>Finden Sie alle aktuellen Nachrichten zur Schweizer Fußballnationalmannschaft.</p>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="/Code/Img/actu1.jpg" class="card-img-top" alt="Schweiz gegen Luxemburg" />
+            <div class="card-body">
+              <h5 class="card-title">Ein feuriges erstes Halbzeit und die Schweiz kehrt zum Sieg zurück</h5>
+              <p class="card-text">Die Schweiz beendete am Dienstag in St. Gallen ihre Serie von acht sieglosen Spielen. Die Mannschaft von Murat Yakin besiegte Luxemburg mit 3:1 dank drei Toren in der ersten Halbzeit.</p>
+              <a href="https://www.arcinfo.ch/sport/football/football-une-mi-temps-de-feu-et-la-suisse-retrouve-la-victoire-1446076" class="btn btn-primary">Mehr erfahren</a>
+            </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/Code/Img/actu2.jpg" class="card-img-top" alt="" />
-          <div class="card-body">
-            <h5 class="card-title">Fussball: Schweiz startet das Jahr mit einem Remis in Nordirland</h5>
-            <p class="card-text">Die Schweiz spielte in Belfast gegen Nordirland 1:1. Vincent Sierro traf per Kopf kurz vor der Pause in einem Freundschaftsspiel, das von der Schweiz dominiert wurde.</p>
-            <a href="https://www.arcinfo.ch/sport/football/football-la-suisse-debute-lannee-par-un-nul-en-irlande-du-nord-1445561" class="btn btn-primary">Mehr erfahren</a>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/Code/Img/actu2.jpg" class="card-img-top" alt="Schweiz gegen Nordirland" />
+            <div class="card-body">
+              <h5 class="card-title">Die Schweiz startet das Jahr mit einem Unentschieden in Nordirland</h5>
+              <p class="card-text">Die Schweiz erreichte ein 1:1-Unentschieden in Belfast gegen Nordirland. Vincent Sierro glich per Kopf vor der Halbzeitpause in diesem von der Schweiz dominierten Freundschaftsspiel aus.</p>
+              <a href="https://www.arcinfo.ch/sport/football/football-la-suisse-debute-lannee-par-un-nul-en-irlande-du-nord-1445561" class="btn btn-primary">Mehr erfahren</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
     <p class="mb-0">&copy; Gruppe 3 – Alle Rechte vorbehalten.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-    [...popoverTriggerList].forEach(el => new bootstrap.Popover(el));
-  </script>
 </body>
 </html>

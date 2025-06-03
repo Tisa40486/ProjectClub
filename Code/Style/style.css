@@ -1,72 +1,90 @@
-.logo{
-    width: 100px;
-    height: auto;
+/* === Couleurs principales === */
+:root {
+  --primary-color: #d90429; /* Rouge Suisse */
+  --secondary-color: #edf2f4; /* Gris clair */
+  --text-color: #2b2d42; /* Gris foncé */
+  --muted-color: #8d99ae;
 }
 
-.ButtonNav button, a{
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    background-color: #FFFF;
-    border-color: #FFFF;
-}
-.Title h1{
-    font-size: 50px;
-    text-align: center;
-    text-decoration: underline;
-    color: #333;
-    
-}
-.Title{
-    margin-bottom: 50px;
+/* === Body général === */
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
-.mb-5 h2{
-    font-size: 45px;
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 50px;
-}
-.Score{
-   background-color: #A61103;
-    border-radius: 25px;
-}
-.Score p{
-    font-size: 20px;
-    text-align: center;
-    color: #FFFF;
-}
-.Actualités h2{
-    font-size: 50px;
-    text-align: center;
-    text-decoration: underline;
-    color: #333;
-    margin-bottom: 5%;
-}
-.Actualités p{
-    font-size: 20px;
-    text-align: center;
-    text-indent: 5px;
-}
-.card-group{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25%;
-}
-.card-body{
-    text-align: center;
-}
-.card-body h5{
-    font-size: 20px;
-    text-align: center;
-    text-decoration: underline;
-}
-.card-body p{
-    font-size: 15px;
-    text-align: justify;
-    text-indent: 5px;
-}
-.card{
-    margin: 40px;
+/* === Header === */
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+header img {
+  border-radius: 8px;
+}
+
+/* === Bouton retour === */
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* === Carte de formulaire === */
+.card {
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.card h2 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* === Formulaire === */
+.form-label {
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(217, 4, 41, 0.25);
+}
+
+/* === Bouton principal === */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #a6031f;
+  border-color: #a6031f;
+}
+
+/* === Footer === */
+footer {
+  font-size: 0.9rem;
+  color: var(--muted-color);
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
